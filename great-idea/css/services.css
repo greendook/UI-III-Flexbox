@@ -49,9 +49,9 @@ center,
 dl,
 dt,
 dd,
-ol,
+/* ol,
 ul,
-li,
+li, */
 fieldset,
 form,
 label,
@@ -108,10 +108,10 @@ section {
 body {
     line-height: 1;
 }
-ol,
+/* ol,
 ul {
-    list-style: none;
-}
+    list-style: none; */
+/* } */
 blockquote,
 q {
     quotes: none;
@@ -157,15 +157,17 @@ h5 {
     font-size: 25px;
     padding: 20px;
     font-family: "Acme";
-    background-color: beige;
 }
 
+.top-pic {
+    padding: 25px 0;
+}
 .container {
     display: flex;
     width: 100%;
     margin: 40px auto 0 auto;
     padding: 30px 0;
-    text-align: center;
+    text-align: left;
 }
 
 .container2 {
@@ -177,8 +179,7 @@ h5 {
 }
 
 .item2 {
-    padding: 20px;
-    flex: 1;
+    padding: 0 20px;
 }
 
 .alignleft {
@@ -187,14 +188,14 @@ h5 {
 
 .button {
     background-color: white;
-    border: solid black;
+    border: 1px solid black;
     color: black;
-    padding: 15px 32px;
+    padding: 10px 40px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 20px auto;
     cursor: pointer;
 }
 .content {
@@ -221,5 +222,22 @@ h3 {
 .divider {
     border-bottom: 1px solid black;
     width: 100%;
-    padding: 15px 0;
+
+    margin: 30px 0 50px 0;
+}
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.column {
+    width: 43%;
+    padding: 20px 20px;
+    margin: 20px;
+    border: 1px solid black;
+    background: rgb(238, 236, 236);
+}
+.column2 {
+    width: 50%;
 }
